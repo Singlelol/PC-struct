@@ -1,0 +1,384 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2")
+         url("../fonts/Roboto-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2")
+       url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.woff2") format("woff2")
+         url("../fonts/Roboto-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  font-weight: normal;
+  color: #fff;
+  background-image: linear-gradient(to right top, #060606, #050504, #030303, #020201, #000);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 130rem;
+  margin: 0 auto;
+}
+
+::root {
+  --text-size-medium: 1.6rem;
+}
+
+.button {
+  border-radius: 5rem;
+  padding: 1rem 3rem;
+  color: #fff;
+  line-height: 150%;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  z-index: 10;
+  padding: 4rem 11rem 4rem 8rem;
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.header__nav a:not(:last-child) {
+  margin-right: 7.1rem;
+}
+
+.header__nav a {
+  font: normal 400 1.6rem/1.5 sans-serif;
+}
+
+.header__logo {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+}
+
+.header__button {
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  font-size: 1.6rem;
+}
+
+.main-display__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.main-display {
+  padding-top: 27rem;
+}
+
+.main-display .container {
+  position: relative;
+  z-index: 10;
+  padding-bottom: 22.8rem;
+}
+
+.main-display__header {
+  max-width: 76rem;
+  margin-bottom: 5rem;
+  font: normal 700 6.4rem/1.4 sans-serif;
+}
+
+.main-display__timer {
+  display: flex;
+  margin-bottom: 7.6rem;
+}
+
+.timer__item {
+  width: 10.2rem;
+  height: 11.2rem;
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.timer__item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.timer__count {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.timer__text {
+  font-size: 1.6rem;
+  opacity: 0.4;
+  line-height: 140%;
+}
+
+.main-display__button {
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.work {
+  padding-top: 20rem;
+  padding-bottom: 24.3rem;
+}
+
+.work__wrap {
+  display: flex;
+}
+
+.work__img {
+  width: 52.6rem;
+  height: 52.6rem;
+  border: 3rem solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  margin-right: 13.9rem;
+}
+
+.work__img img {
+  width: 44.6rem;
+  height: 44.6rem;
+  position: relative;
+  top: 9.6rem;
+  left: 1rem;
+}
+
+.work__text {
+ max-width: 50%;
+ padding-top: 6.9rem;
+}
+
+.work__header {
+  font: normal 700 4.8rem/1.4 sans-serif;
+  margin-bottom: 4.5rem;
+}
+
+.work__desk {
+  font-size: 1.6rem;
+  line-height: 160%;
+}
+
+.process {
+  padding-bottom: 20rem;
+  position: relative;
+}
+
+.process .process__img {
+  transform: rotate(45deg);
+}
+
+.process__img {
+  width: 12.7rem;
+  height: 12.7rem;
+  margin-right: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.process__header {
+  font: normal 700 4.8rem/1.4 sans-serif;
+  padding-top: 1rem;
+}
+
+.process__title {
+  display: flex;
+  align-items: center;
+}
+
+.process_desc {
+  font: normal 400 1.6rem/1.4 sans-serif;
+  max-width: 41.1rem;
+  margin-bottom: 8rem;
+  opacity: 0.5;
+}
+
+.process__columns {
+  display: flex;
+}
+
+.process__columns::after {
+  content: '';
+  display: block;
+  width: 130rem;
+  height: .2rem;
+  position: absolute;
+  top: 31rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+
+.process__item {
+  max-width: 30.6rem;
+}
+
+.process__work {
+  margin-bottom: 6.5rem;
+  font: normal 700 3.6rem/1.4 sans-serif;
+}
+
+.process__text {
+  font: normal 400 1.4rem/1.4 sans-serif;
+  opacity: 0.5;
+}
+
+.command {
+  padding-bottom: 20rem;
+}
+
+.command__title {
+  margin-bottom: 11.9rem;
+}
+
+.command .process__img {
+  margin-bottom: 0;
+}
+
+.command__wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.command__item {
+  min-width: 250px;
+  width: 22%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.command__item:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.command__img {
+  width: 19rem;
+  height: 19rem;
+  margin-bottom: 4rem;
+  border-radius: 50%;
+}
+
+.command__name {
+  font: normal 500 2.4rem/1.4 sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.command__prof {
+  font: normal 400 1.6rem/1.6 sans-serif;
+  margin-bottom: 3rem;
+  opacity: 0.8;
+}
+
+.command__link {
+  font: normal 400 1.6rem/1.5 sans-serif;
+  border: .1rem solid #fff;
+}
+
+.assembly {
+  padding-bottom: 24.4rem;
+}
+
+.assembly__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.assembly__header {
+  font: normal 700 4.8rem/1.4 sans-serif;
+  margin-bottom: 3rem;
+}
+
+.assembly__desc {
+  font: normal 400 1.6rem/1.6 sans-serif;
+  opacity: .5;
+  margin-bottom: 4.52rem;
+}
+
+.assembly__button {
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+  font: normal 700 1.6rem/1.5 sans-serif;
+  margin-bottom: 5.8rem;
+}
+
+.assembly__sociale {
+  display: flex;
+}
+
+.assembly__item {
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.assembly__item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.assembly__item img{
+  padding: 1.3rem 1.3rem;
+}
